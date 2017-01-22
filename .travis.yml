@@ -1,0 +1,7 @@
+language: objective-c
+matrix:
+    include:
+        - osx_image: xcode8.1
+
+script:
+    - xcodebuild test -scheme ios-travis -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7' -configuration Debug | xcpretty -c  && exit ${PIPESTATUS[0]}
