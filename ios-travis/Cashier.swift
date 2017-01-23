@@ -23,12 +23,14 @@ class Cashier {
         return self.balance
     }
 
+    @discardableResult
     func deposit(amount: Int) -> Int {
         self.balance += amount
 
         return self.balance
     }
 
+    @discardableResult
     func withdraw(amount: Int) throws -> Int {
         if amount > self.balance {
             throw CashierError.insufficientFundsError(shortage: amount - self.balance)

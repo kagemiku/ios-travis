@@ -20,17 +20,38 @@ class ios_travisTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testGetBalance() {
+        let balance = 10000
+        let cashier = Cashier(balance: balance)
+        XCTAssertEqual(cashier.getBalance(), balance)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+
+    func testDeposit() {
+        let balance = 10000
+        let amount  = 1000
+        let cashier = Cashier(balance: balance)
+
+        XCTAssertEqual(cashier.deposit(amount: amount), balance + amount)
+        XCTAssertEqual(cashier.getBalance(), balance + amount)
+    }
+
+    func testWithdraw() {
+        let balance = 10000
+        let amount1 = 1000
+        let amount2 = 10001
+        let cashier = Cashier(balance: balance)
+
+        XCTAssertEqual(try! cashier.withdraw(amount: amount1), balance - amount1)
+        XCTAssertEqual(cashier.getBalance(), balance - amount1)
+
+        cashier.deposit(amount: amount1)
+        XCTAssertThrowsError(try cashier.withdraw(amount: amount2)) { error in
+            if let e = error as? CashierError, case .insufficientFundsError(let shortage) = e {
+                XCTAssertEqual(shortage, amount2 - balance)
+            } else {
+                XCTAssert(false)
+            }
         }
     }
-    
 }
