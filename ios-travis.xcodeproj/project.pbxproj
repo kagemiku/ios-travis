@@ -12,8 +12,9 @@
 		10D890C51E34FA3A00FF3EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C31E34FA3A00FF3EBA /* Main.storyboard */; };
 		10D890C71E34FA3A00FF3EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C61E34FA3A00FF3EBA /* Assets.xcassets */; };
 		10D890CA1E34FA3A00FF3EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */; };
-		10D890D51E34FA3A00FF3EBA /* ios_travisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890D41E34FA3A00FF3EBA /* ios_travisTests.swift */; };
+		10D890D51E34FA3A00FF3EBA /* CashierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890D41E34FA3A00FF3EBA /* CashierTests.swift */; };
 		10D890E01E34FA3A00FF3EBA /* ios_travisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890DF1E34FA3A00FF3EBA /* ios_travisUITests.swift */; };
+		10D890EE1E35098000FF3EBA /* Cashier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890ED1E35098000FF3EBA /* Cashier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,12 @@
 		10D890C91E34FA3A00FF3EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D890CB1E34FA3A00FF3EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D890D01E34FA3A00FF3EBA /* ios-travisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-travisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D890D41E34FA3A00FF3EBA /* ios_travisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_travisTests.swift; sourceTree = "<group>"; };
+		10D890D41E34FA3A00FF3EBA /* CashierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierTests.swift; sourceTree = "<group>"; };
 		10D890D61E34FA3A00FF3EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D890DB1E34FA3A00FF3EBA /* ios-travisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-travisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D890DF1E34FA3A00FF3EBA /* ios_travisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_travisUITests.swift; sourceTree = "<group>"; };
 		10D890E11E34FA3A00FF3EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D890ED1E35098000FF3EBA /* Cashier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				10D890C61E34FA3A00FF3EBA /* Assets.xcassets */,
 				10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */,
 				10D890CB1E34FA3A00FF3EBA /* Info.plist */,
+				10D890ED1E35098000FF3EBA /* Cashier.swift */,
 			);
 			path = "ios-travis";
 			sourceTree = "<group>";
@@ -110,7 +113,7 @@
 		10D890D31E34FA3A00FF3EBA /* ios-travisTests */ = {
 			isa = PBXGroup;
 			children = (
-				10D890D41E34FA3A00FF3EBA /* ios_travisTests.swift */,
+				10D890D41E34FA3A00FF3EBA /* CashierTests.swift */,
 				10D890D61E34FA3A00FF3EBA /* Info.plist */,
 			);
 			path = "ios-travisTests";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D890EE1E35098000FF3EBA /* Cashier.swift in Sources */,
 				10D890C21E34FA3A00FF3EBA /* ViewController.swift in Sources */,
 				10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */,
 			);
@@ -268,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10D890D51E34FA3A00FF3EBA /* ios_travisTests.swift in Sources */,
+				10D890D51E34FA3A00FF3EBA /* CashierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +507,7 @@
 				10D890E61E34FA3A00FF3EBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10D890E71E34FA3A00FF3EBA /* Build configuration list for PBXNativeTarget "ios-travisTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				10D890E91E34FA3A00FF3EBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10D890EA1E34FA3A00FF3EBA /* Build configuration list for PBXNativeTarget "ios-travisUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				10D890EC1E34FA3A00FF3EBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
