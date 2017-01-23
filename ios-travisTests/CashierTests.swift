@@ -1,5 +1,5 @@
 //
-//  ios_travisTests.swift
+//  CashierTests.swift
 //  ios-travisTests
 //
 //  Created by KAGE on 1/22/17.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import ios_travis
 
-class ios_travisTests: XCTestCase {
+class CashierTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
