@@ -1,5 +1,5 @@
 //
-//  ios_travisUITests.swift
+//  ViewControllerUITests.swift
 //  ios-travisUITests
 //
 //  Created by KAGE on 1/22/17.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ios_travisUITests: XCTestCase {
+class ViewControllerUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
