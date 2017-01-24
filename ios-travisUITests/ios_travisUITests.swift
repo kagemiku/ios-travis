@@ -28,9 +28,46 @@ class ios_travisUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDeposito() {
+        let app = XCUIApplication()
+        let textField = app.textFields["amountTextField"]
+        textField.tap()
+        textField.typeText("100")
+
+        let depositButton = app.buttons["depositButton"]
+        depositButton.tap()
+
+        let balanceLabel = app.staticTexts["balanceLabel"]
+
+        XCTAssertEqual(balanceLabel.label, "10100")
     }
-    
+
+    func testWithdraw() {
+        let app = XCUIApplication()
+        let textField = app.textFields["amountTextField"]
+        textField.tap()
+        textField.typeText("100")
+
+        let withdrawButton = app.buttons["withdrawButton"]
+        withdrawButton.tap()
+
+        let balanceLabel = app.staticTexts["balanceLabel"]
+
+        XCTAssertEqual(balanceLabel.label, "9900")
+    }
+
+    func testAlert() {
+        let app = XCUIApplication()
+        let textField = app.textFields["amountTextField"]
+        textField.tap()
+        textField.typeText("10001")
+
+        let withdrawButton = app.buttons["withdrawButton"]
+        withdrawButton.tap()
+
+        let alert = app.alerts["alert"]
+        XCTAssertTrue(alert.exists)
+        alert.buttons["OK"].tap()
+        XCTAssertFalse(alert.exists)
+    }
 }
