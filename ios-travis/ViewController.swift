@@ -45,6 +45,7 @@ class ViewController: UIViewController {
             balance = try self.cashier.withdraw(amount: amount)
         } catch CashierError.insufficientFundsError(let shortage) {
             let alertVC = UIAlertController(title: "Error", message: "Amount(\(shortage)) is larger than current balance.", preferredStyle: .alert)
+            alertVC.view.accessibilityIdentifier = "alert"
             let okButton: UIAlertAction = UIAlertAction(title: "OK", style: .default) { [weak self] action in
                 self?.amountTextField.text = ""
             }
