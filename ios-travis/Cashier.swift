@@ -12,7 +12,7 @@ enum CashierError: Error {
     case insufficientFundsError(shortage: Int)
 }
 
-class Cashier {
+final class Cashier {
     private var balance: Int = 0
 
     init(balance: Int) {

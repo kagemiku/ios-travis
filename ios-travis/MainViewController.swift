@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-    @IBOutlet weak var balanceLabel: UILabel!
-    @IBOutlet weak var amountTextField: UITextField!
+final class MainViewController: UIViewController {
+    @IBOutlet private weak var balanceLabel: UILabel!
+    @IBOutlet private weak var amountTextField: UITextField!
 
     private var cashier: Cashier = Cashier(balance: 10000)
     private var histories: [History] = []
@@ -41,7 +41,7 @@ class MainViewController: UIViewController {
         }
     }
 
-    @IBAction func didTapDepositButton(_ sender: Any) {
+    @IBAction private func didTapDepositButton(_ sender: Any) {
         guard let text = self.amountTextField.text, let amount = Int(text) else {
             return
         }
@@ -53,7 +53,7 @@ class MainViewController: UIViewController {
         self.histories.append(History.deposit(amount))
     }
 
-    @IBAction func didTapWithdrawButton(_ sender: Any) {
+    @IBAction private func didTapWithdrawButton(_ sender: Any) {
         guard let text = self.amountTextField.text, let amount = Int(text) else {
             return
         }

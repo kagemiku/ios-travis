@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+final class HistoryViewController: UIViewController {
     @IBOutlet fileprivate weak var historyTableView: UITableView! {
         didSet {
             self.historyTableView.dataSource = self
