@@ -21,6 +21,12 @@ class MainViewController: UIViewController {
         self.balanceLabel.text = String(self.cashier.getBalance())
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        self.amountTextField.resignFirstResponder()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
