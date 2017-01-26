@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10796B701E3A4EDA00B52A00 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */; };
+		10796B721E3A51DC00B52A00 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B711E3A51DC00B52A00 /* History.swift */; };
 		10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */; };
 		10D890C21E34FA3A00FF3EBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890C11E34FA3A00FF3EBA /* MainViewController.swift */; };
 		10D890C51E34FA3A00FF3EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C31E34FA3A00FF3EBA /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		10796B711E3A51DC00B52A00 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		10D890BC1E34FA3A00FF3EBA /* ios-travis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-travis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10D890C11E34FA3A00FF3EBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */,
 				10D890CB1E34FA3A00FF3EBA /* Info.plist */,
 				10D890ED1E35098000FF3EBA /* Cashier.swift */,
+				10796B711E3A51DC00B52A00 /* History.swift */,
 			);
 			path = "ios-travis";
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				10D890C21E34FA3A00FF3EBA /* MainViewController.swift in Sources */,
 				10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */,
 				10796B701E3A4EDA00B52A00 /* HistoryViewController.swift in Sources */,
+				10796B721E3A51DC00B52A00 /* History.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
