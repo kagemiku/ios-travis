@@ -39,8 +39,10 @@ extension HistoryViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = String(describing: self.histories[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath)
+        if let c = cell as? HistoryTableViewCell {
+            c.configure(self.histories[indexPath.row])
+        }
 
         return cell
     }
