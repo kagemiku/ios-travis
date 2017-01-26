@@ -88,7 +88,7 @@
                     <navigationItem key="navigationItem" title="Main" id="TB6-uI-CqB">
                         <barButtonItem key="rightBarButtonItem" title="History" id="iX6-Hs-ARk">
                             <connections>
-                                <segue destination="8Av-Mc-IVJ" kind="show" id="mwF-So-hJn"/>
+                                <segue destination="8Av-Mc-IVJ" kind="show" identifier="showHistorySegue" id="mwF-So-hJn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

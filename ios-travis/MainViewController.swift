@@ -26,6 +26,15 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showHistorySegue" {
+            log.debug("showHistorySegue")
+            if let vc = segue.destination as? HistoryViewController {
+                vc.configure(histories: self.histories)
+            }
+        }
+    }
+
     @IBAction func didTapDepositButton(_ sender: Any) {
         guard let text = self.amountTextField.text, let amount = Int(text) else {
             return

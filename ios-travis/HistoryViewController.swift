@@ -11,6 +11,8 @@ import UIKit
 class HistoryViewController: UIViewController {
     @IBOutlet fileprivate weak var historyTableView: UITableView!
 
+    fileprivate var histories: [History] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,5 +22,9 @@ class HistoryViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func configure(histories: [History]) {
+        self.histories = histories.reversed()
     }
 }
