@@ -8,6 +8,18 @@
 
 import UIKit
 
+import Log
+
+// MARK: - Logger
+let log: Logger = {
+    let logger = Logger(formatter: .detailed, theme: .dusk)
+    #if !DEBUG
+        logger.enabled = false
+    #endif
+    return logger
+}()
+
+// MARK: - AppDelegate
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
