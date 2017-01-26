@@ -116,6 +116,43 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xfj-GI-p7y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" id="Vh4-oF-boo" userLabel="HistoryCell" customClass="HistoryTableViewCell" customModule="ios_travis" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vh4-oF-boo" id="HPO-a6-2sb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDl-xW-pdP" userLabel="AmountLabel">
+                                                    <rect key="frame" x="131" y="11" width="28.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Withdraw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-Gq-uMe" userLabel="TypeLabel">
+                                                    <rect key="frame" x="38" y="11" width="73" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="73" id="xhX-lA-Xcy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yDl-xW-pdP" firstAttribute="leading" secondItem="F5R-Gq-uMe" secondAttribute="trailing" constant="20" id="EC9-6M-b3J"/>
+                                                <constraint firstItem="yDl-xW-pdP" firstAttribute="centerY" secondItem="HPO-a6-2sb" secondAttribute="centerY" id="MVT-gj-xER"/>
+                                                <constraint firstItem="F5R-Gq-uMe" firstAttribute="leading" secondItem="HPO-a6-2sb" secondAttribute="leadingMargin" constant="30" id="iAG-FL-wQq"/>
+                                                <constraint firstItem="F5R-Gq-uMe" firstAttribute="centerY" secondItem="HPO-a6-2sb" secondAttribute="centerY" id="wzl-Ka-cPC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amountLabel" destination="yDl-xW-pdP" id="4Ld-Hk-3vS"/>
+                                            <outlet property="typeLabel" destination="F5R-Gq-uMe" id="j9n-zx-egN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

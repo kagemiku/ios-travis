@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104485811E3A56FA009EB03B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */; };
 		10796B701E3A4EDA00B52A00 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */; };
 		10796B721E3A51DC00B52A00 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B711E3A51DC00B52A00 /* History.swift */; };
 		10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		10796B711E3A51DC00B52A00 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		10D890BC1E34FA3A00FF3EBA /* ios-travis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-travis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 				10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */,
 				10D890C11E34FA3A00FF3EBA /* MainViewController.swift */,
 				10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */,
+				104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */,
 				10D890C31E34FA3A00FF3EBA /* Main.storyboard */,
 				10D890C61E34FA3A00FF3EBA /* Assets.xcassets */,
 				10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */,
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104485811E3A56FA009EB03B /* HistoryTableViewCell.swift in Sources */,
 				10D890EE1E35098000FF3EBA /* Cashier.swift in Sources */,
 				10D890C21E34FA3A00FF3EBA /* MainViewController.swift in Sources */,
 				10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */,
