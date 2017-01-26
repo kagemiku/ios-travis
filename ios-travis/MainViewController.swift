@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
 
     private var cashier: Cashier = Cashier(balance: 10000)
+    private var histories: [History] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,8 @@ class MainViewController: UIViewController {
         let balance = self.cashier.deposit(amount: amount)
         self.balanceLabel.text = String(balance)
         self.amountTextField.text = ""
+
+        self.histories.append(History.deposit(amount))
     }
 
     @IBAction func didTapWithdrawButton(_ sender: Any) {
@@ -60,5 +63,7 @@ class MainViewController: UIViewController {
 
         self.balanceLabel.text = String(balance)
         self.amountTextField.text = ""
+
+        self.histories.append(History.withdraw(amount))
     }
 }
