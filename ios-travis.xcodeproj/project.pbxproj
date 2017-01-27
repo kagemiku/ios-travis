@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		104485811E3A56FA009EB03B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */; };
+		104485831E3B35B6009EB03B /* HistoryViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104485821E3B35B6009EB03B /* HistoryViewControllerUITests.swift */; };
+		104485841E3B403B009EB03B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B711E3A51DC00B52A00 /* History.swift */; };
 		10796B701E3A4EDA00B52A00 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */; };
 		10796B721E3A51DC00B52A00 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B711E3A51DC00B52A00 /* History.swift */; };
 		10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */; };
@@ -40,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		104485821E3B35B6009EB03B /* HistoryViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewControllerUITests.swift; sourceTree = "<group>"; };
 		10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		10796B711E3A51DC00B52A00 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		10D890BC1E34FA3A00FF3EBA /* ios-travis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-travis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */,
+				104485821E3B35B6009EB03B /* HistoryViewControllerUITests.swift */,
 				10D890E11E34FA3A00FF3EBA /* Info.plist */,
 			);
 			path = "ios-travisUITests";
@@ -322,7 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104485841E3B403B009EB03B /* History.swift in Sources */,
 				10D890E01E34FA3A00FF3EBA /* MainViewControllerUITests.swift in Sources */,
+				104485831E3B35B6009EB03B /* HistoryViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
