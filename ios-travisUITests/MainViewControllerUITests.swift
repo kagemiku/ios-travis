@@ -1,5 +1,5 @@
 //
-//  ViewControllerUITests.swift
+//  MainViewControllerUITests.swift
 //  ios-travisUITests
 //
 //  Created by KAGE on 1/22/17.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ViewControllerUITests: XCTestCase {
+class MainViewControllerUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class ViewControllerUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testDeposito() {
+    func testDeposit() {
         let app = XCUIApplication()
         let textField = app.textFields["amountTextField"]
         textField.tap()
@@ -56,7 +56,7 @@ class ViewControllerUITests: XCTestCase {
         XCTAssertEqual(balanceLabel.label, "9900")
     }
 
-    func testAlert() {
+    func testWithdraw_WithAlert() {
         let app = XCUIApplication()
         let textField = app.textFields["amountTextField"]
         textField.tap()
@@ -69,5 +69,14 @@ class ViewControllerUITests: XCTestCase {
         XCTAssertTrue(alert.exists)
         alert.buttons["OK"].tap()
         XCTAssertFalse(alert.exists)
+    }
+
+    func testHistory() {
+        let app = XCUIApplication()
+        let historyButton = app.navigationBars["Main"].buttons["History"]
+        historyButton.tap()
+
+        let navigationBar = app.navigationBars["History"]
+        XCTAssertTrue(navigationBar.exists)
     }
 }

@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104485811E3A56FA009EB03B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */; };
+		104485831E3B35B6009EB03B /* HistoryViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104485821E3B35B6009EB03B /* HistoryViewControllerUITests.swift */; };
+		104485841E3B403B009EB03B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B711E3A51DC00B52A00 /* History.swift */; };
+		10796B701E3A4EDA00B52A00 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */; };
+		10796B721E3A51DC00B52A00 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B711E3A51DC00B52A00 /* History.swift */; };
 		10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */; };
-		10D890C21E34FA3A00FF3EBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890C11E34FA3A00FF3EBA /* ViewController.swift */; };
+		10D890C21E34FA3A00FF3EBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890C11E34FA3A00FF3EBA /* MainViewController.swift */; };
 		10D890C51E34FA3A00FF3EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C31E34FA3A00FF3EBA /* Main.storyboard */; };
 		10D890C71E34FA3A00FF3EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C61E34FA3A00FF3EBA /* Assets.xcassets */; };
 		10D890CA1E34FA3A00FF3EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */; };
 		10D890D51E34FA3A00FF3EBA /* CashierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890D41E34FA3A00FF3EBA /* CashierTests.swift */; };
-		10D890E01E34FA3A00FF3EBA /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890DF1E34FA3A00FF3EBA /* ViewControllerUITests.swift */; };
+		10D890E01E34FA3A00FF3EBA /* MainViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */; };
 		10D890EE1E35098000FF3EBA /* Cashier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890ED1E35098000FF3EBA /* Cashier.swift */; };
 		10D890F41E38F7B800FF3EBA /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D890F31E38F7B800FF3EBA /* Log.framework */; };
 /* End PBXBuildFile section */
@@ -36,9 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		104485821E3B35B6009EB03B /* HistoryViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewControllerUITests.swift; sourceTree = "<group>"; };
+		10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		10796B711E3A51DC00B52A00 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		10D890BC1E34FA3A00FF3EBA /* ios-travis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-travis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10D890C11E34FA3A00FF3EBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10D890C11E34FA3A00FF3EBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		10D890C41E34FA3A00FF3EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10D890C61E34FA3A00FF3EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10D890C91E34FA3A00FF3EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,7 +56,7 @@
 		10D890D41E34FA3A00FF3EBA /* CashierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierTests.swift; sourceTree = "<group>"; };
 		10D890D61E34FA3A00FF3EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D890DB1E34FA3A00FF3EBA /* ios-travisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-travisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D890DF1E34FA3A00FF3EBA /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerUITests.swift; sourceTree = "<group>"; };
 		10D890E11E34FA3A00FF3EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D890ED1E35098000FF3EBA /* Cashier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashier.swift; sourceTree = "<group>"; };
 		10D890F31E38F7B800FF3EBA /* Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Log.framework; path = Carthage/Build/iOS/Log.framework; sourceTree = "<group>"; };
@@ -104,12 +113,15 @@
 			isa = PBXGroup;
 			children = (
 				10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */,
-				10D890C11E34FA3A00FF3EBA /* ViewController.swift */,
+				10D890C11E34FA3A00FF3EBA /* MainViewController.swift */,
+				10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */,
+				104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */,
+				10D890ED1E35098000FF3EBA /* Cashier.swift */,
+				10796B711E3A51DC00B52A00 /* History.swift */,
 				10D890C31E34FA3A00FF3EBA /* Main.storyboard */,
 				10D890C61E34FA3A00FF3EBA /* Assets.xcassets */,
 				10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */,
 				10D890CB1E34FA3A00FF3EBA /* Info.plist */,
-				10D890ED1E35098000FF3EBA /* Cashier.swift */,
 			);
 			path = "ios-travis";
 			sourceTree = "<group>";
@@ -126,7 +138,8 @@
 		10D890DE1E34FA3A00FF3EBA /* ios-travisUITests */ = {
 			isa = PBXGroup;
 			children = (
-				10D890DF1E34FA3A00FF3EBA /* ViewControllerUITests.swift */,
+				10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */,
+				104485821E3B35B6009EB03B /* HistoryViewControllerUITests.swift */,
 				10D890E11E34FA3A00FF3EBA /* Info.plist */,
 			);
 			path = "ios-travisUITests";
@@ -292,9 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104485811E3A56FA009EB03B /* HistoryTableViewCell.swift in Sources */,
 				10D890EE1E35098000FF3EBA /* Cashier.swift in Sources */,
-				10D890C21E34FA3A00FF3EBA /* ViewController.swift in Sources */,
+				10D890C21E34FA3A00FF3EBA /* MainViewController.swift in Sources */,
 				10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */,
+				10796B701E3A4EDA00B52A00 /* HistoryViewController.swift in Sources */,
+				10796B721E3A51DC00B52A00 /* History.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10D890E01E34FA3A00FF3EBA /* ViewControllerUITests.swift in Sources */,
+				104485841E3B403B009EB03B /* History.swift in Sources */,
+				10D890E01E34FA3A00FF3EBA /* MainViewControllerUITests.swift in Sources */,
+				104485831E3B35B6009EB03B /* HistoryViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  ios-travis
 //
 //  Created by KAGE on 1/22/17.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var balanceLabel: UILabel!
-    @IBOutlet weak var amountTextField: UITextField!
+final class MainViewController: UIViewController {
+    @IBOutlet private weak var balanceLabel: UILabel!
+    @IBOutlet private weak var amountTextField: UITextField!
 
     private var cashier: Cashier = Cashier(balance: 10000)
+    private var histories: [History] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +21,22 @@ class ViewController: UIViewController {
         self.balanceLabel.text = String(self.cashier.getBalance())
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        self.amountTextField.resignFirstResponder()
     }
 
-    @IBAction func didTapDepositButton(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showHistorySegue" {
+            log.debug("showHistorySegue")
+            if let vc = segue.destination as? HistoryViewController {
+                vc.configure(histories: self.histories)
+            }
+        }
+    }
+
+    @IBAction private func didTapDepositButton(_ sender: Any) {
         guard let text = self.amountTextField.text, let amount = Int(text) else {
             return
         }
@@ -33,9 +44,11 @@ class ViewController: UIViewController {
         let balance = self.cashier.deposit(amount: amount)
         self.balanceLabel.text = String(balance)
         self.amountTextField.text = ""
+
+        self.histories.append(History.deposit(amount))
     }
 
-    @IBAction func didTapWithdrawButton(_ sender: Any) {
+    @IBAction private func didTapWithdrawButton(_ sender: Any) {
         guard let text = self.amountTextField.text, let amount = Int(text) else {
             return
         }
@@ -60,5 +73,7 @@ class ViewController: UIViewController {
 
         self.balanceLabel.text = String(balance)
         self.amountTextField.text = ""
+
+        self.histories.append(History.withdraw(amount))
     }
 }
