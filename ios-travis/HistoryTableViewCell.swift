@@ -12,17 +12,6 @@ final class HistoryTableViewCell: UITableViewCell {
     @IBOutlet private weak var typeLabel: UILabel!
     @IBOutlet private weak var amountLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
     func configure(_ history: History) {
         switch history {
         case .deposit(let amount):

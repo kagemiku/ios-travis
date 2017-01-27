@@ -27,11 +27,6 @@ final class MainViewController: UIViewController {
         self.amountTextField.resignFirstResponder()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showHistorySegue" {
             log.debug("showHistorySegue")
