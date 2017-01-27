@@ -16,7 +16,7 @@
 		10D890C71E34FA3A00FF3EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C61E34FA3A00FF3EBA /* Assets.xcassets */; };
 		10D890CA1E34FA3A00FF3EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */; };
 		10D890D51E34FA3A00FF3EBA /* CashierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890D41E34FA3A00FF3EBA /* CashierTests.swift */; };
-		10D890E01E34FA3A00FF3EBA /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890DF1E34FA3A00FF3EBA /* ViewControllerUITests.swift */; };
+		10D890E01E34FA3A00FF3EBA /* MainViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */; };
 		10D890EE1E35098000FF3EBA /* Cashier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890ED1E35098000FF3EBA /* Cashier.swift */; };
 		10D890F41E38F7B800FF3EBA /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D890F31E38F7B800FF3EBA /* Log.framework */; };
 /* End PBXBuildFile section */
@@ -53,7 +53,7 @@
 		10D890D41E34FA3A00FF3EBA /* CashierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierTests.swift; sourceTree = "<group>"; };
 		10D890D61E34FA3A00FF3EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D890DB1E34FA3A00FF3EBA /* ios-travisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-travisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D890DF1E34FA3A00FF3EBA /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerUITests.swift; sourceTree = "<group>"; };
 		10D890E11E34FA3A00FF3EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D890ED1E35098000FF3EBA /* Cashier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashier.swift; sourceTree = "<group>"; };
 		10D890F31E38F7B800FF3EBA /* Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Log.framework; path = Carthage/Build/iOS/Log.framework; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		10D890DE1E34FA3A00FF3EBA /* ios-travisUITests */ = {
 			isa = PBXGroup;
 			children = (
-				10D890DF1E34FA3A00FF3EBA /* ViewControllerUITests.swift */,
+				10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */,
 				10D890E11E34FA3A00FF3EBA /* Info.plist */,
 			);
 			path = "ios-travisUITests";
@@ -322,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10D890E01E34FA3A00FF3EBA /* ViewControllerUITests.swift in Sources */,
+				10D890E01E34FA3A00FF3EBA /* MainViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
