@@ -70,4 +70,13 @@ class ViewControllerUITests: XCTestCase {
         alert.buttons["OK"].tap()
         XCTAssertFalse(alert.exists)
     }
+
+    func testHistory() {
+        let app = XCUIApplication()
+        let historyButton = app.navigationBars["Main"].buttons["History"]
+        historyButton.tap()
+
+        let navigationBar = app.navigationBars["History"]
+        XCTAssertTrue(navigationBar.exists)
+    }
 }
