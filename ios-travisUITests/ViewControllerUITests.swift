@@ -28,7 +28,7 @@ class ViewControllerUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testDeposito() {
+    func testDeposit() {
         let app = XCUIApplication()
         let textField = app.textFields["amountTextField"]
         textField.tap()
@@ -56,7 +56,7 @@ class ViewControllerUITests: XCTestCase {
         XCTAssertEqual(balanceLabel.label, "9900")
     }
 
-    func testAlert() {
+    func testWithdraw_WithAlert() {
         let app = XCUIApplication()
         let textField = app.textFields["amountTextField"]
         textField.tap()
