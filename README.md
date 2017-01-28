@@ -8,6 +8,8 @@
 
 Test repository for Travis-CI
 
+* [GitHub上のiOSプロジェクトでもTravis CI × CodecovでCIしたい! - Qiita](http://qiita.com/KAGE_MIKU/items/727b9100c66a44b3a38c)
+
 
 # License
 MIT License
