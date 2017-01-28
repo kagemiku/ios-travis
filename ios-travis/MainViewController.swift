@@ -30,6 +30,7 @@ final class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showHistorySegue" {
             log.debug("showHistorySegue")
+
             if let vc = segue.destination as? HistoryViewController {
                 vc.configure(histories: self.histories)
             }
@@ -42,7 +43,7 @@ final class MainViewController: UIViewController {
         }
 
         let balance = self.cashier.deposit(amount: amount)
-        self.balanceLabel.text = String(balance)
+        self.balanceLabel.text    = String(balance)
         self.amountTextField.text = ""
 
         self.histories.append(History.deposit(amount))
@@ -59,7 +60,9 @@ final class MainViewController: UIViewController {
         } catch CashierError.insufficientFundsError(let shortage) {
             log.debug("AlertViewController will be shown")
 
-            let alertVC = UIAlertController(title: "Error", message: "Amount(\(shortage)) is larger than current balance.", preferredStyle: .alert)
+            let alertVC = UIAlertController(title: "Error",
+                                            message: "Amount(\(shortage)) is larger than current balance.",
+                                            preferredStyle: .alert)
             alertVC.view.accessibilityIdentifier = "alert"
             let okButton: UIAlertAction = UIAlertAction(title: "OK", style: .default) { [weak self] action in
                 self?.amountTextField.text = ""
@@ -68,10 +71,10 @@ final class MainViewController: UIViewController {
             self.present(alertVC, animated: true, completion: nil)
             return
         } catch {
-            fatalError("Uncaught exception was threw")
+            fatalError("Uncaught exception was thrown")
         }
 
-        self.balanceLabel.text = String(balance)
+        self.balanceLabel.text    = String(balance)
         self.amountTextField.text = ""
 
         self.histories.append(History.withdraw(amount))
