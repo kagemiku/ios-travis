@@ -12,6 +12,7 @@ final class HistoryViewController: UIViewController {
     @IBOutlet fileprivate weak var historyTableView: UITableView! {
         didSet {
             self.historyTableView.dataSource = self
+            self.historyTableView.delegate   = self
         }
     }
 
@@ -34,5 +35,11 @@ extension HistoryViewController: UITableViewDataSource {
         }
 
         return cell
+    }
+}
+
+extension HistoryViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

@@ -67,6 +67,10 @@ class MainViewControllerUITests: XCTestCase {
 
         let alert = app.alerts["alert"]
         XCTAssertTrue(alert.exists)
+
+        let messageLabel = alert.staticTexts["Amount is larger than current balance. Shortage is 1."]
+        XCTAssertTrue(messageLabel.exists)
+
         alert.buttons["OK"].tap()
         XCTAssertFalse(alert.exists)
     }
