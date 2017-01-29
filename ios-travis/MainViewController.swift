@@ -61,7 +61,7 @@ final class MainViewController: UIViewController {
             log.debug("AlertViewController will be shown")
 
             let alertVC = UIAlertController(title: "Error",
-                                            message: "Amount(\(shortage)) is larger than current balance.",
+                                            message: "Amount is larger than current balance.\nShortage is \(shortage).",
                                             preferredStyle: .alert)
             alertVC.view.accessibilityIdentifier = "alert"
             let okButton: UIAlertAction = UIAlertAction(title: "OK", style: .default) { [weak self] action in
