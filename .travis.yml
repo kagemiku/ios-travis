@@ -9,5 +9,5 @@ before_install:
     - carthage bootstrap --no-use-binaries --platform ios
 
 script:
-    - xcodebuild -scheme ios-travis -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7' -configuration Debug test
-    - bash <(curl -s https://codecov.io/bash)
+    - xcodebuild -scheme ios-travis -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7' -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+    - bash <(curl -s https://codecov.io/bash) -cF ios
