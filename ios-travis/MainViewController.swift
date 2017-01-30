@@ -38,7 +38,10 @@ final class MainViewController: UIViewController {
     }
 
     @IBAction private func didTapDepositButton(_ sender: Any) {
-        guard let text = self.amountTextField.text, let amount = Int(text) else {
+        guard
+            let text = self.amountTextField.text,
+            let amount = Int(text)
+        else {
             return
         }
 
@@ -50,7 +53,10 @@ final class MainViewController: UIViewController {
     }
 
     @IBAction private func didTapWithdrawButton(_ sender: Any) {
-        guard let text = self.amountTextField.text, let amount = Int(text) else {
+        guard
+            let text = self.amountTextField.text,
+            let amount = Int(text)
+        else {
             return
         }
 

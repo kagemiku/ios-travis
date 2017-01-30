@@ -1,0 +1,4 @@
+coverage_service: cobertura_xml
+xcodeproj: ios-travis.xcodeproj
+scheme: ios-travis
+source_directory: ios-travis
