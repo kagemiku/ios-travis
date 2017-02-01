@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		104485811E3A56FA009EB03B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */; };
+		1027E3A51E41F62500254EE6 /* Cashier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027E3A31E41F62500254EE6 /* Cashier.swift */; };
+		1027E3A61E41F62500254EE6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027E3A41E41F62500254EE6 /* History.swift */; };
+		1027E3A81E41F62D00254EE6 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027E3A71E41F62D00254EE6 /* HistoryTableViewCell.swift */; };
+		1027E3AC1E41F63400254EE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027E3A91E41F63400254EE6 /* AppDelegate.swift */; };
+		1027E3AD1E41F63400254EE6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027E3AA1E41F63400254EE6 /* HistoryViewController.swift */; };
+		1027E3AE1E41F63400254EE6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027E3AB1E41F63400254EE6 /* MainViewController.swift */; };
+		1027E3AF1E41F84C00254EE6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027E3A41E41F62500254EE6 /* History.swift */; };
 		104485831E3B35B6009EB03B /* HistoryViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104485821E3B35B6009EB03B /* HistoryViewControllerUITests.swift */; };
-		104485841E3B403B009EB03B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B711E3A51DC00B52A00 /* History.swift */; };
-		10796B701E3A4EDA00B52A00 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */; };
-		10796B721E3A51DC00B52A00 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10796B711E3A51DC00B52A00 /* History.swift */; };
-		10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */; };
-		10D890C21E34FA3A00FF3EBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890C11E34FA3A00FF3EBA /* MainViewController.swift */; };
 		10D890C51E34FA3A00FF3EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C31E34FA3A00FF3EBA /* Main.storyboard */; };
 		10D890C71E34FA3A00FF3EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C61E34FA3A00FF3EBA /* Assets.xcassets */; };
 		10D890CA1E34FA3A00FF3EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */; };
 		10D890D51E34FA3A00FF3EBA /* CashierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890D41E34FA3A00FF3EBA /* CashierTests.swift */; };
 		10D890E01E34FA3A00FF3EBA /* MainViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */; };
-		10D890EE1E35098000FF3EBA /* Cashier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D890ED1E35098000FF3EBA /* Cashier.swift */; };
 		10D890F41E38F7B800FF3EBA /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D890F31E38F7B800FF3EBA /* Log.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,13 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		1027E3A31E41F62500254EE6 /* Cashier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cashier.swift; path = Model/Cashier.swift; sourceTree = "<group>"; };
+		1027E3A41E41F62500254EE6 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = History.swift; path = Model/History.swift; sourceTree = "<group>"; };
+		1027E3A71E41F62D00254EE6 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryTableViewCell.swift; path = View/HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		1027E3A91E41F63400254EE6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Controller/AppDelegate.swift; sourceTree = "<group>"; };
+		1027E3AA1E41F63400254EE6 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = Controller/HistoryViewController.swift; sourceTree = "<group>"; };
+		1027E3AB1E41F63400254EE6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controller/MainViewController.swift; sourceTree = "<group>"; };
 		104485821E3B35B6009EB03B /* HistoryViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewControllerUITests.swift; sourceTree = "<group>"; };
-		10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		10796B711E3A51DC00B52A00 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		10D890BC1E34FA3A00FF3EBA /* ios-travis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-travis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10D890C11E34FA3A00FF3EBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		10D890C41E34FA3A00FF3EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10D890C61E34FA3A00FF3EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10D890C91E34FA3A00FF3EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		10D890DB1E34FA3A00FF3EBA /* ios-travisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-travisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D890DF1E34FA3A00FF3EBA /* MainViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerUITests.swift; sourceTree = "<group>"; };
 		10D890E11E34FA3A00FF3EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10D890ED1E35098000FF3EBA /* Cashier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashier.swift; sourceTree = "<group>"; };
 		10D890F31E38F7B800FF3EBA /* Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Log.framework; path = Carthage/Build/iOS/Log.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1027E3A01E41F59B00254EE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1027E3A31E41F62500254EE6 /* Cashier.swift */,
+				1027E3A41E41F62500254EE6 /* History.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1027E3A11E41F5A800254EE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1027E3A71E41F62D00254EE6 /* HistoryTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1027E3A21E41F5AD00254EE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1027E3A91E41F63400254EE6 /* AppDelegate.swift */,
+				1027E3AB1E41F63400254EE6 /* MainViewController.swift */,
+				1027E3AA1E41F63400254EE6 /* HistoryViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		10D890B31E34FA3A00FF3EBA = {
 			isa = PBXGroup;
 			children = (
@@ -112,12 +139,9 @@
 		10D890BE1E34FA3A00FF3EBA /* ios-travis */ = {
 			isa = PBXGroup;
 			children = (
-				10D890BF1E34FA3A00FF3EBA /* AppDelegate.swift */,
-				10D890C11E34FA3A00FF3EBA /* MainViewController.swift */,
-				10796B6F1E3A4EDA00B52A00 /* HistoryViewController.swift */,
-				104485801E3A56FA009EB03B /* HistoryTableViewCell.swift */,
-				10D890ED1E35098000FF3EBA /* Cashier.swift */,
-				10796B711E3A51DC00B52A00 /* History.swift */,
+				1027E3A01E41F59B00254EE6 /* Model */,
+				1027E3A11E41F5A800254EE6 /* View */,
+				1027E3A21E41F5AD00254EE6 /* Controller */,
 				10D890C31E34FA3A00FF3EBA /* Main.storyboard */,
 				10D890C61E34FA3A00FF3EBA /* Assets.xcassets */,
 				10D890C81E34FA3A00FF3EBA /* LaunchScreen.storyboard */,
@@ -222,6 +246,7 @@
 				TargetAttributes = {
 					10D890BB1E34FA3A00FF3EBA = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					10D890CF1E34FA3A00FF3EBA = {
@@ -305,12 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104485811E3A56FA009EB03B /* HistoryTableViewCell.swift in Sources */,
-				10D890EE1E35098000FF3EBA /* Cashier.swift in Sources */,
-				10D890C21E34FA3A00FF3EBA /* MainViewController.swift in Sources */,
-				10D890C01E34FA3A00FF3EBA /* AppDelegate.swift in Sources */,
-				10796B701E3A4EDA00B52A00 /* HistoryViewController.swift in Sources */,
-				10796B721E3A51DC00B52A00 /* History.swift in Sources */,
+				1027E3AC1E41F63400254EE6 /* AppDelegate.swift in Sources */,
+				1027E3A81E41F62D00254EE6 /* HistoryTableViewCell.swift in Sources */,
+				1027E3A61E41F62500254EE6 /* History.swift in Sources */,
+				1027E3AE1E41F63400254EE6 /* MainViewController.swift in Sources */,
+				1027E3AD1E41F63400254EE6 /* HistoryViewController.swift in Sources */,
+				1027E3A51E41F62500254EE6 /* Cashier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104485841E3B403B009EB03B /* History.swift in Sources */,
+				1027E3AF1E41F84C00254EE6 /* History.swift in Sources */,
 				10D890E01E34FA3A00FF3EBA /* MainViewControllerUITests.swift in Sources */,
 				104485831E3B35B6009EB03B /* HistoryViewControllerUITests.swift in Sources */,
 			);
@@ -462,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -470,6 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kagemiku.ios-travis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -478,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
