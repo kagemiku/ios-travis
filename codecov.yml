@@ -1,0 +1,6 @@
+coverage:
+    ignore:
+        - ./ios-travis/View/*
+        - ./ios-travis/Controller/*
+        - ./ios-travisTests/*
+        - ./ios-travisUITests/*
